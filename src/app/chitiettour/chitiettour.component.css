@@ -1,0 +1,60 @@
+.chitiettour-first, .chitiettour-body,.row--lichtrinh
+{
+    padding: 10px;
+    margin: 30px auto ;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.tour-item__footer__add-to-compare{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+a{
+    text-decoration: none
+}
+.group-add-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.group-right{
+    justify-content: flex-end;
+}
+.group-price{
+    padding: 50px 30px;
+}
+ .image{
+    width: 200px;
+    border-radius: 10px;
+}
+.price{
+    font-weight: bold;
+}
+.sale-price{
+    font-size: x-large;
+}
+.overviewtour--content{
+    padding: 10px 20px;
+}
+
+.bi-heart:hover{
+    animation: zoom 0.5s ease forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+@media screen and (max-width:992px){
+    
+    .image{
+        margin: 0 10px;
+    }
+   
+}

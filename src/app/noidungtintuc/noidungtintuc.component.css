@@ -1,0 +1,157 @@
+.noidungtintuc-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.badge {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    height: 35px;
+    font-family: Fester_Bold;
+    font-size: 22px;
+}
+
+.noidungtintuc-title {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    /* overflow: hidden; */
+    height: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    font-family: Fester_Bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.noidungtintuc-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.noidungtintuc-container-left {
+    width: 1000px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+}
+
+.noidungtintuc-container-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 110px;
+    bottom: 600px;
+}
+
+.noidungtintuc-container-right-tintucmoi {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px 0 20px 20px;
+    width: 380px;
+}
+
+.noidungtintuc-container-right-tintucphobien {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px 0 20px 20px;
+    width: 380px;
+}
+
+h1 {
+    font-family: Fester_Bold;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #0C4A6D;
+}
+
+.noidungtintuc-img {
+    width: 300px !important;
+}
+
+h2 {
+    font-family: Fester_Bold;
+    font-size: 24px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.noidungtintuc-ul li {
+    font-family: text-regular;
+    margin: 15px 10px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/*Độ lớn khi màn hình 1000px*/
+
+@media screen and (max-width:1000px) {
+    .noidungtintuc-container {
+        flex-direction: column;
+    }
+    .noidungtintuc-container-left {
+        width: 100%;
+    }
+    .noidungtintuc-container-right {
+        width: 100%;
+    }
+    .noidungtintuc-container-right-tintucmoi {
+        width: 100%;
+        margin: 20px 20px 20px 0;
+    }
+    .noidungtintuc-container-right-tintucphobien {
+        width: 100%;
+        margin: 20px 20px 20px 0;
+    }
+}
+
+
+/**/
+
+@media screen and (max-width:750px) {
+    .noidungtintuc-content {
+        margin-top: 0px;
+    }
+}
+
+
+/*Độ lớn khi màn hình 600px*/
+
+@media screen and (max-width:600px) {
+    .noidungtintuc-container {
+        flex-direction: column;
+    }
+    .noidungtintuc-container-left {
+        width: 100%;
+    }
+    .noidungtintuc-container-right {
+        width: 100%;
+    }
+    .noidungtintuc-container-right-tintucmoi {
+        width: 100%;
+        margin: 20px 20px 20px 0;
+    }
+    .noidungtintuc-container-right-tintucphobien {
+        width: 100%;
+        margin: 20px 20px 20px 0;
+    }
+}

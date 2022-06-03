@@ -1,0 +1,36 @@
+.row-style{
+    font-family: sans-serif;
+    font-size: 17px;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+}
+.tour-content{
+    background-color:rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+}
+.tour-content:hover{
+    transform: scale(1.03);
+}
+.tour_info{
+    text-align: left;
+    width: 60%;
+}
+#style_color{
+    color: #064682;
+}
+.tour_button{
+    text-align: right;
+    width: 40%;
+    position: relative;
+}
+.function_button{
+    position: absolute;
+    bottom: 5px;
+    width: 90%;
+}
+.btn-light:hover{
+    cursor: pointer;
+    background-color: rgb(182, 180, 177);
+}

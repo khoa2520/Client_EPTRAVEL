@@ -1,0 +1,109 @@
+<div></div>
+<div class="container">
+    <div class="thongtin-content bg-light mx-auto bg-opacity-50 row">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 " style="width: 380px; margin-left: 0px;">
+                <img src="{{base_url+tour.images[0]}}" class="rounded float-left">
+            </div>
+            <div class="col-lg-6" style="width:350px; margin-left: 0px;">
+                <h5>Tên tour</h5>
+                {{tour._id}} 
+                <p>Thông tin sản phẩm</p>
+            </div>
+        </div>
+        <div class="thongtinlienlac">
+            <div class="text-divider">
+                <h6 id="thongtin-tieude">Thông tin liên lạc</h6>
+            </div>
+            <div class="border-ttll">
+                <div class="row d-flex justify-content-center mt-4">
+                    <div class="col-lg-6">
+                        <div class="form-group col-lg-6">
+                            <label for="hoten">Họ tên:</label>
+                            <input type="text" class="form-control" id="hoten">
+                        </div>
+                        <div class="form-group col-lg-6 ">
+                            <label for="sdt">Số điện thoại:</label>
+                            <input type="number" class="form-control" id="sdt">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group2 col-lg-6 ">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group2 col-lg-6">
+                            <label for="diachi">Địa chỉ:</label>
+                            <input type="text" class="form-control" id="diachi">
+                        </div>
+                    </div>
+                </div>
+                <h6 class="text-center mt-3">Hành khách</h6>
+                <div class="row d-flex justify-content-center">
+                    <div class=" hanhkhach row border border-dark rounded bg-white row col-6 ">
+                        <div class="col-6">
+                            <p>Người lớn</p>
+                            <p>>= 18 tuổi</p>
+                        </div>
+                        <div class="sl col-6 ">
+                            <div class="buttons_added ">
+                                <input class="minus is-form" (click)="minusnl()" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="{{numnl}}">
+                                <input class="plus is-form" (click)="addnl()" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hanhkhach treem row border border-dark rounded bg-white row col-6">
+                        <div class="col-6">
+                            <p>Trẻ em </p>
+                            <p> 11 - 17 tuổi</p>
+                        </div>
+                        <div class="sl col-6 ">
+                            <div class="buttons_added ">
+                                <input class="minus is-form" (click)="minuste()" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="{{numte}}">
+                                <input class="plus is-form" (click)="addte()" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="hanhkhach row border border-dark rounded bg-white row">
+                        <div class="col-6">
+                            <p>Trẻ nhỏ</p>
+                            <p>5 - 10 tuổi</p>
+                        </div>
+                        <div class="sl col-6 ">
+                            <div class="buttons_added ">
+                                <input class="minus is-form" (click)="minustn()" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="{{numtn}}">
+                                <input class="plus is-form" (click)="addtn()" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hanhkhach embe row border border-dark rounded bg-white row">
+                        <div class="col-6">
+                            <p>Em bé</p>
+                            <p>Dưới 5 tuổi</p>
+                        </div>
+                        <div class="sl col-6 ">
+                            <div class="buttons_added ">
+                                <input class="minus is-form" (click)="minuseb()" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="{{numeb}}">
+                                <input class="plus is-form" (click)="addeb()" type="button" value="+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 ">
+            <div class="sl col-6 ">
+                <button class="thongtin-button text-light p-2 ">Trở về</button>
+            </div>
+            <div class="sl col-6  d-flex justify-content-end" style="padding-right:0px">
+                <button class="thongtin-button text-light p-2">Tiếp theo</button>
+            </div>
+        </div>
+    </div>
+</div>

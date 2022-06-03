@@ -1,0 +1,16 @@
+<div [ngStyle]="{'background' : 'url(./assets/images/main_background_den.png)', 'width':'100%', 'background-size': 'cover', 'background-attachment': 'fixed'}">
+    <div [ngStyle]="{'position': 'fixed','width':'100%', 'top':'0', 'z-index':'1000'}">
+        <app-header></app-header>
+    </div>
+    <div  [ngStyle]="{'margin-top' :'100px', 'padding-top' : '20px'}">
+        <router-outlet></router-outlet>  
+    </div>
+    <div>
+        <app-footer></app-footer>
+    </div>
+</div>
+
+<!-- <app-dangnhap></app-dangnhap> -->
+
+
+

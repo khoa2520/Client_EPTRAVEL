@@ -1,0 +1,125 @@
+
+.title-tourdulich{
+    border-radius: 5px;
+    background-color: rgba(85, 85, 85,0.5);
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+.card-title{
+    font-weight: bold;
+
+}
+
+.card-img-top{
+    height: 230px;
+}
+.sapxep-select{
+    align-items: right;
+    width: 200px;
+}
+.select-item{
+    margin: 10px;
+    width: 90%;
+}
+.locsanpham-select{
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(85, 85, 85,0.5);
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    width: 18%;
+}
+.tour-item__price--current{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#tour-item__price--current__number{
+    font-weight: bold;
+    color: rgb(194, 3, 3);
+}
+.tour-item__footer__add-to-compare{
+    border: 0;
+    background-color: rgba(255, 255, 255,0.4);
+    margin-top: 10px;
+}
+.card-body{
+    background-color: rgba(255, 255, 255,0.4);
+}
+a{
+    text-decoration: none
+}
+.form-search{
+    position: fixed;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-tour:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px 2px #888888;
+}
+.p-sticky{
+    position: -webkit-sticky;
+    position: sticky;
+  top: 140px;
+}
+@media screen and (max-width:1980px){
+    .card-tour{
+        width: 270px;
+        min-width: 50px;
+        
+    }
+}
+@media screen and (max-width:1616px){
+    
+    .category{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:1427px){
+    .card-tour{
+width: 300px;
+min-width: 50px;
+        margin: 0 10px;
+    }
+    
+    
+    
+}
+@media screen and (max-width:1200px){
+    
+    .locsanpham-select{
+        display: flex;
+        position: fixed;
+        width: auto;
+        z-index: 1;
+    }
+    .category{
+        margin-top: 70px;
+    }
+   
+}
+
+@media screen and (max-width:990px){
+    .card-tour{
+        width: 90%;
+        min-width: 250px;
+        
+    }
+    .card-img-top{
+        height: 300px;
+    }
+    .locsanpham-select{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: auto;
+    }
+}

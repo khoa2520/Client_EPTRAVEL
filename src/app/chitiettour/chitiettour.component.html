@@ -1,0 +1,109 @@
+    <div *ngFor="let t of tour_dt" >
+       <div *ngIf="check(t.ma_tour)">
+            <div class="container chitiettour-first">
+                <div class="row">
+                    <div class="col-md-6 col-12 group-left">
+                        <div class="warp-mark">
+                            <i class="bi bi-ticket-perforated"></i><label> {{t.ma_tour}}</label>
+                        </div>
+                        <h1 class="title">{{t.ten_tour}} </h1>
+                        <div class="short-rating d-inline-flex ">
+                            <div class="s-rate">
+                                <div class="rating"><i class="bi bi-chat-heart-fill"></i><label>100</label></div>
+                            </div>
+                            <button class="tour-item__footer__add-to-compare d-inline-flex align-items-center addcomparegrid">
+                                <a class="link-danger" (click)="XuLyYeuThich()"><i class="bi bi-plus-circle-fill"></i> Thêm
+                                    vào
+                                    yêu thích
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 group-right d-flex">
+                        <div class="group-price">
+                            <div class="sale-price">
+                                <p><span class="text-danger price">{{t.giatiennguoilon | number}}₫</span>/ khách</p>
+                            </div>
+                            <div class="saving">
+                            </div>
+                        </div>
+                        <div class="group-add-cart">
+                            <button class="btn btn-danger  btn-book">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Đặt
+                                ngay
+                            </button>
+                            <button class="btn btn-block border border-secondary">
+            
+                                Liên hệ tư vấn
+            
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container chitiettour-body">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 left">
+                        <div class="image">
+                            <img src="{{base_url+t.images[1]}}" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 right">
+                        <div class="row gy-4">
+                            <div class="col-md-12 col-sm-12 small">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="image">
+                                            <img src="{{base_url+t.images[2]}}"
+                                                class="img-fluid" alt="image">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="image">
+                                            <img src="{{base_url+t.images[3]}}"
+                                                class="img-fluid" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 big">
+                                <div class="image">
+                                    <img src="{{base_url+t.images[4]}}" class="img-fluid"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="motatour--content" [innerHTML]="t.noidungchitiet"></div>
+                    <div class="overviewtour--content row">
+                        <div class="box-order col-md-6 col-12 ">
+                            <p>Ngày khởi hành: <b>{{t.ngaykhoihanh}}</b></p>
+                            <p>Thời gian: <b>{{t.thoigian}}</b></p>
+                            <p>Nơi khởi hành: <b> {{t.noikhoihanh}}</b></p>
+                            <p> Phương tiện di chuyển: <b> {{t.phuongtiendichuyen}}</b></p>
+                            <p>Số chỗ còn nhận: <b>{{t.sochoconnhan}}</b></p>
+                        </div>
+                        <div class="box-diemthamquan col-md-3 col-12 ">
+                            <h4>Các điểm tham quan</h4>
+                            <p [innerHTML]="t.diadiemthamquan"></p>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <h4>Khách sạn</h4>
+                            <p>{{t.khachsan}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row--lichtrinh container">
+                <h3 class="text-center" >Lịch trình</h3>
+                <hr>
+                <div class="row--lichtrinh__item" [innerHTML]="t.lichtrinh">
+                   
+                </div>
+            </div>
+       </div>
+    </div>
+

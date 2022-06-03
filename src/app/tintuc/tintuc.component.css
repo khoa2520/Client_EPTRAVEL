@@ -1,0 +1,303 @@
+    .tintuc-content {
+        width: 94.5%;
+        margin: 0 auto;
+        padding: 10px 0 10px 0;
+        margin-top: 0px;
+        font-size: 30px;
+        font-family: Fester_Bold;
+    }
+    
+    .badge {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        height: 35px;
+    }
+    
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 22px;
+    }
+    /**********************************************/
+    
+    .tintuc-main-box {
+        background-color: rgb(255, 255, 255, 0.4);
+        border-radius: 10px;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        min-width: 0px;
+    }
+    
+    .tintuc-main-box__left {
+        width: 700px;
+        margin: 20px;
+    }
+    
+    .tintuc-main-box__right {
+        width: 90%;
+        /*Để 45% thì được khi chưa load data nhưng 90% ms được khi load data*/
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .tintuc-left-img {
+        border-radius: 10px;
+        height: 443px;
+        width: 700px;
+    }
+    
+    .tintuc-left-img:hover {
+        transform: scale(0.95);
+    }
+    
+    .tintuc-font-big-header {
+        font-family: Fester_Bold;
+        font-size: 32px;
+        margin-top: 25px;
+        color: #0C4A6D;
+    }
+    
+    .tintuc-font-big-header :hover {
+        transform: scale(1.05);
+    }
+    
+    .tintuc-box {
+        background-color: rgb(255, 255, 255, 0.4);
+        border-radius: 10px;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .tintuc-box :hover {
+        transform: scale(1.005);
+        box-shadow: aqua;
+    }
+    
+    .tintuc-main-box-right__item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .tintuc-right-img {
+        border-radius: 10px;
+        height: 134px;
+        width: 250px;
+    }
+    
+    .tintuc-right-img:hover {
+        transform: scale(1.01);
+    }
+    
+    .tintuc-font-medium-header {
+        font-family: Fester_Bold;
+        font-size: 20px;
+        color: #0C4A6D;
+    }
+    
+    .tintuc-style-day-written {
+        font-family: Fester_bold;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    .tintuc-bottom-img {
+        border-radius: 10px;
+        height: 250px;
+        width: 400px;
+    }
+    
+    .tintuc-bottom-img:hover {
+        transform: scale(1.05);
+    }
+    
+    .tintuc-box-item__left {
+        margin: 20px;
+    }
+    
+    .tintuc-box-item__right {
+        margin: 30px;
+    }
+    
+    p {
+        font-size: 22px;
+        margin-top: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    
+    a {
+        text-decoration: none;
+        color: #0C4A6D;
+    }
+    
+    a:hover {
+        color: rgb(33, 33, 189);
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width:1350px) {
+        .tintuc-main-box {
+            flex-direction: column;
+        }
+        .tintuc-main-box__left {
+            width: 100%;
+            margin: 2%;
+        }
+        .tintuc-left-img {
+            border-radius: 10px;
+            width: 95%;
+            height: 100%;
+        }
+        .tintuc-main-box__right {
+            width: 95%;
+            margin: 20px;
+        }
+        .tintuc-right-img {
+            border-radius: 10px;
+            height: 250px;
+            width: 400px;
+        }
+        .tintuc-font-medium-header {
+            font-family: Fester_Bold;
+            font-size: 32px;
+            color: #0C4A6D;
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        .tintuc-main-box__right {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .tintuc-main-box-right__item {
+            flex-direction: column;
+            margin-bottom: 20px auto;
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 10px;
+        }
+        .tintuc-right-img {
+            border-radius: 10px;
+            height: 50%;
+            width: 95%;
+            margin: 20px;
+        }
+        .tintuc-main-box {
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 100%;
+        }
+        .tintuc-main-box__left {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255, 0.4);
+        }
+        .tintuc-left-img {
+            border-radius: 10px;
+            width: 95%;
+            display: block;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .tintuc-box {
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .tintuc-box-item__right {
+            margin: 20px;
+        }
+        .tintuc-style-day-written {
+            margin: 20px auto;
+        }
+        .tintuc-bottom-img {
+            width: 100%;
+            height: 62.5%;
+        }
+        hr {
+            display: none;
+        }
+        .tintuc-main-box-left__contentanday {
+            margin: 20px;
+        }
+    }
+    
+    @media screen and (max-width:850px) {
+        .tintuc-content {
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .tintuc-content {
+            margin-top: 0px;
+        }
+        .tintuc-main-box__right {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .tintuc-main-box-right__item {
+            flex-direction: column;
+            margin-bottom: 20px auto;
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 10px;
+        }
+        .tintuc-right-img {
+            border-radius: 10px;
+            height: 50%;
+            width: 90%;
+            margin: 5%;
+        }
+        .tintuc-main-box {
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .tintuc-main-box__left {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255, 0.4);
+        }
+        .tintuc-left-img {
+            border-radius: 10px;
+            width: 90%;
+            height: 50%;
+            margin: 20px;
+        }
+        .tintuc-box {
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .tintuc-box-item__right {
+            margin: 20px;
+        }
+        .tintuc-style-day-written {
+            margin: 20px auto;
+        }
+        .tintuc-bottom-img {
+            width: 100%;
+            height: 62.5%;
+        }
+        hr {
+            display: none;
+        }
+        .tintuc-main-box-left__contentanday {
+            margin: 20px;
+        }
+    }

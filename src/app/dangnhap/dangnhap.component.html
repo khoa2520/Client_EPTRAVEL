@@ -1,0 +1,47 @@
+<div class="conatiner-fluid frame">
+    <mat-dialog-actions>
+        <button class="mat-raised-button" (click)="close()">X</button>
+    </mat-dialog-actions>
+    <div class="text-center ">
+        <img src="./assets/images/logo/logo.png" alt="logo">
+    </div>
+    <h2 class="text-center h1">Đăng nhập</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+        <div style="margin-left:10%">
+            <p>Tài khoản <span class="redstar">*</span></p>
+            <input class="form-control" formControlName="email"
+                [class.is-invalid]="loginForm.controls['email'].invalid&&loginForm.controls['email'].touched"
+                type="text" placeholder="ngdakhoa@gmail.com" id="taikhoan">
+            <small class="text-danger" *ngIf="loginForm.controls['email'].errors?.['required']">email không
+                được để trống</small>
+            <small class="text-danger" *ngIf="loginForm.controls['email'].errors?.['email']">Email sai cấu
+                trúc</small>
+        </div>
+        <div style="margin-left:10%">
+            <p>Mật khẩu <span class=" redstar ">*</span></p>
+            <input type="password" id="pass" placeholder="nhập mật khẩu mới" class="form-control"
+            formControlName="passWord"
+            [class.is-invalid]="loginForm.controls['passWord'].invalid&&loginForm.controls['passWord'].touched">
+        </div>
+        <div class="row">
+            <div class="col "></div>
+            <a>
+                <p class="col text-primary" style="margin-left: 15%">Quên mật khẩu</p>
+            </a>
+        </div>
+        <div class="text-center">
+            <input type="submit" id="" class="bg-primary btn text-white " value="Đăng Nhập">
+        </div>
+
+        <a routerLink="/dangky" routerLinkActive="active">
+            <p class="text-center text-primary" (click)="close()">Tạo tài khoản mới</p>
+        </a>
+    </form>
+    <!-- 
+    <p class="text-center text-muted">Hoặc</p>
+    <div class="dn-logo ft-left">
+        <input class="form-control" type="button " value=" " id="gg_link-icon " style="background-image: url(./assets/images/ICON/GG.png); ">
+        <input class="form-control" type="button " value=" " id="fb_link-icon " style="background-image: url(./assets/images/ICON/FB.png); ">
+        <input class="form-control" type="button " value=" " id="tw_link-icon " style="background-image: url(./assets/images/ICON/TW.png); ">
+    </div> -->
+</div>

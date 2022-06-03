@@ -1,0 +1,125 @@
+<div class="container-fluid" style="background-image: url(./assets/images/main_background_den.png)">
+    <div class="row">
+        <div class="logo_icon col-3">
+            <img src="../assets/images/logo/logo.png" alt="Logo Error">
+        </div>
+        <ul class="navbar  navbar-expand-sm justify-content-center col-6">
+            <li class="nav-item">
+                <a routerLink="/trangchu" routerLinkActive="active" class="nav-link text-light" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item nav-tourdulich" (mouseenter)="hienCap1()">
+                <a routerLink="/tourdulich" routerLinkActive="active" class="nav-link text-light" role="button"
+                    data-bs-toggle="dropdown">Tour du lịch</a>
+                <ul class="text-light nav-trongngoainuocul {{cap1}}" (mouseleave)="anCap1()">
+
+                    <li class="nav-trongngoainuoc nav-trongnuoc" (mouseenter)="hienTN(); anNN()">
+                        <a class="" routerLink="/tourdulich/quocgia/trongnuoc" routerLinkActive="active">Tour trong nước</a>
+                        <ul class="trongngoainuoc trongnuoc {{trongnuoc_b}}" (mouseleave)="anTN()">
+                            <!-- <li>
+                                <a class="" routerLink="/tourdulich/trongnuoc/mienbac" routerLinkActive="active">Miền
+                                    Bắc</a>
+
+                            </li>
+                            <li>
+                                <a class="" routerLink="/tourdulich/trongnuoc/mientrung" routerLinkActive="active">Miền
+                                    Trung</a>
+
+                            </li>
+                            <li>
+                                <a class="" routerLink="/tourdulich/trongnuoc/miennam" routerLinkActive="active">Miền
+                                    Nam</a>
+
+                            </li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav-trongngoainuoc nav-ngoainuoc" (mouseenter)="hienNN(); anTN()">
+                        <a class="" routerLink="/tourdulich/quocgia/ngoainuoc" routerLinkActive="active">Tour ngoài ngước</a>
+                        <ul class="trongngoainuoc ngoainuoc {{ngoainuoc_b}}" (mouseleave)="anNN()">
+                            <!-- <li>
+                                <a class="" routerLink="/tourdulich/ngoainuoc/chaua" routerLinkActive="active">Châu
+                                    Á</a>
+
+                            </li>
+                            <li>
+                                <a class="" routerLink="/tourdulich/ngoainuoc/chauau" routerLinkActive="active"> Châu
+                                    Âu</a>
+
+                            </li>
+                            <li>
+                                <a class="" routerLink="/tourdulich/ngoainuoc/chaumy" routerLinkActive="active">Châu
+                                    Mỹ</a>
+
+                            </li> -->
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a routerLink="/khuyenmai" routerLinkActive="active" class="nav-link text-light" href="#">Khuyến mãi</a>
+            </li>
+
+            <li class="nav-item">
+                <a routerLink="/tintuc" routerLinkActive="active" class="nav-link text-light" href="#">Tin Tức</a>
+            </li>
+
+            <li class="nav-item">
+                <a routerLink="/lienhe" routerLinkActive="active" class="nav-link text-light" href="#">Liên hệ</a>
+            </li>
+        </ul>
+        <div class=" logo_3 col-3">
+            <div class="align-left">
+                <div class="search text-center">
+                    <button class="btn-search {{search_focus}}" (click)="changeSearch()">
+                        <i class="bi bi-search col-4"></i>
+                    </button>
+                    <div class="search-box {{box_show}}" (mouseleave)="changeSearch()">
+                        <div class="title">Search</div>
+                        <div class="search-bar">
+                          <div>
+                                <input style="background-image: url('../../assets/images/ICON/search.png'); background-size: 20px;" type="text" id="myInput" [(ngModel)]="searchText" onkeyup="myFunction()" placeholder="Tìm tour" title="Type in a name">
+                           
+                            <div class="search-bar-body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr *ngFor="let t of tour | filter: searchText" routerLink="/tourdulich/{{t.ma_tour}}" routerLinkActive="active">
+                                        <td><img style="border-radius: 3px;" src="{{base_url+t.images[2]}}" width="150px" alt=""></td>
+                                        <td>{{ t.ten_tour }}</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button routerLink="/yeuthich" routerLinkActive="active" (mouseenter)="changeHeart()"
+                        (mouseleave)="changeHeart()">
+                        <i class="bi {{btnHeart}}"></i>
+                    </button>
+                </div>
+                <div class="text-center">
+                    <button (click)="changeHidden()" (mouseenter)="changePerson()" (mouseleave)="changePerson()">
+                        <i class="bi {{btnPerson}}"></i>
+                    </button>
+
+                    <div (mouseleave)="changeHidden()" class="login-list {{hidden}}">
+                        <div type="button" class="btn btn-primary " (click)="openDialog()" class="login row">
+                            <span class="col-8">Đăng Nhập</span>
+                            <i class="bi bi-box-arrow-in-right col-4"></i>
+
+                        </div>
+                        <div class="regis row" routerLink="/dangky" routerLinkActive="active">
+                            <span class="col-8">Đăng Ký</span>
+                            <i class="bi bi-person-plus-fill col-4"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

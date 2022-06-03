@@ -1,0 +1,157 @@
+.badge {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    height: 35px;
+    font-family: Fester_Bold;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.ttkh-box {
+    width: 91%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-box {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px 10px 20px 0px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-box {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px 0px 20px 10px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    align-self: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Fester_Bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.menubar {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(102, 104, 107);
+}
+
+.header-span {
+    font-family: Fester_Bold;
+    color: #0C4A6D;
+    font-size: 28px;
+    width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-order {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.order-content {
+    margin: 20px;
+    width: 700px;
+    font-family: Fester_Bold;
+    font-size: 18px;
+}
+
+.status {
+    position: relative;
+    bottom: -70px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.total {
+    float: right;
+    text-align: right;
+    position: relative;
+    bottom: -75px;
+    color: rgb(167, 17, 17);
+}
+
+.status-span-thanhtoan {
+    color: #1341a6
+}
+
+.status-span-huy {
+    color: #ad0803
+}
+
+.status-span-chothanhtoan {
+    color: #057b00
+}
+
+.soluong {
+    font-size: 16px;
+    color: rgb(106, 105, 105);
+}
+
+.menubar:hover {
+    background-color: rgba(68, 67, 67, 0.4);
+    color: rgb(255, 255, 255) !important;
+}
+
+@media screen and (max-width:700px) {
+    .order-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .status {
+        position: relative;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+    .total {
+        position: relative;
+        bottom: -25px;
+        left: -205px;
+        right: 0px;
+        float: left;
+    }
+}

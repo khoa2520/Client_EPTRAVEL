@@ -1,0 +1,49 @@
+<div class="container-fluid">{{errMessage}}
+    <div class="tintuc-content">
+        <div class="row">
+            <span class="badge">TIN TỨC DU LỊCH</span>
+        </div>
+        <div class="tintuc-main-box">
+            <div class="tintuc-main-box__left" *ngFor="let t of tintuc;first as isFirst" [class.d-none]="t.tintuc_id==1?false:true">
+                <div *ngIf="isFirst">
+                    <a><img class="tintuc-left-img" src="{{t.main_img}}" alt="Error" style="z-index: 1;" routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active"></a>
+                    <div>
+                        <div style="margin-top: 20px;" class="tintuc-main-box-left__contentanday">
+                            <a class="tintuc-font-big-header" routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active">{{t.header}}</a>
+                        </div>
+                        <div class="tintuc-main-box-left__contentanday">
+                            <span class="tintuc-style-day-written">{{t.date}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tintuc-main-box__right">
+                <div class="tintuc-main-box-right__item" *ngFor="let t of tintuc" [class.d-none]="t.tintuc_id==2||t.tintuc_id==3||t.tintuc_id==4?false:true" routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active">
+                    <div>
+                        <a><img class="tintuc-right-img" src="{{t.main_img}}"></a>
+                    </div>
+                    <div style="margin-left:20px;">
+                        <a class="tintuc-font-medium-header">{{t.header}}</a>
+                        <div class="tintuc-style-day-written">{{t.date}}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tintuc-box {{isSelected(t)? 'selected':''}}" *ngFor="let t of tintuc;first as isFirst" (click)="onSelect(t)" [class.d-none]="t.tintuc_id>4?false:true">
+            <div class="tintuc-box-item__left">
+                <div>
+                    <a routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active">
+                        <img class="tintuc-bottom-img" src="{{t.main_img}}">
+                    </a>
+                </div>
+            </div>
+            <div class="tintuc-box-item__right">
+                <div>
+                    <a routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active" class="tintuc-font-big-header">{{t.header}}</a>
+                    <p>{{t.news_intro}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

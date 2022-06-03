@@ -1,0 +1,79 @@
+<div class="container-fluid ">
+  <div class="row row-style mx-auto" style="width: 92%">
+    <div class="col-lg-4 col-sm-4 col-xs-6">
+      <div class="dropdown mt-2">
+        <button type="button" class="btn dropdown-toggle bg-light border" data-bs-toggle="dropdown" style="width: 100%">
+          Sắp xếp theo
+        </button>
+        <ul class="dropdown-menu text-center" style="width: 100%">
+          <li><a class="dropdown-item" href="#">Giá từ thấp đến cao</a></li>
+          <li><a class="dropdown-item" href="#">Giá từ cao đến thấp</a></li>
+          <li><a class="dropdown-item" href="#">Giảm giá nhiều nhất</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-8 col-sm-8 col-xs-6 ">
+      <div class="input-group mx-auto mt-2" style="width: 100%">
+        <button class="btn btn-light border border-end-0" type="search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+        <input type="text" class="form-control bg-light " placeholder="Tìm kiếm theo tên tour">
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-style mx-auto tour-content" *ngFor="let t of tourKm">
+    <div class="col-lg-4 col-md-4 ">
+      <img src="{{base_url + t.images[1]}}" class="mx-auto d-block"
+        style="width:100%">
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="d-flex justify-content-between" >
+        <div class="p-2 tour_info">
+          <h4 style="font-family: Fester_Bold;">
+            {{t.ten_tour}}
+          </h4>
+          <p>
+            <span id="style_color"> Mã tour: </span>
+            <span>{{t.ma_tour}}</span>
+          </p>
+          <!-- <p>
+            <span id="style_color">Thời gian:  </span>
+            <span> {{t.thoigian}}  </span> 
+          </p> -->
+          <p>
+            <span id="style_color">Nơi khởi hành: </span>
+            <span>{{t.noikhoihanh}} </span>
+          </p>
+          <p>
+            <span id="style_color">Ngày khởi hành: </span>
+            <span> {{t.ngaykhoihanh}}</span>
+          </p>
+          <h2 class="text-danger">{{t.giatiennguoilon | number}} đ </h2>
+        </div>
+        <div class="p-2 tour_button">
+          <img src="./assets/images/ICON/bus.png" alt="bus" style="margin-right: 10px;">
+          <img src="./assets/images/ICON/plane.png" alt="plane">
+          <div class="d-grid gap-3 function_button">
+            <button type="button" class="btn btn-danger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill"
+                viewBox="0 1 18 18">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+              <span style="font-family: Fester_Bold;"> Đặt ngay </span>
+            </button>
+            <button type="button" class="btn btn-light">Xem chi tiết</button>
+            <button type="button" class="btn btn-light" (click)="DeleteFav(t)">Xóa</button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+</div>

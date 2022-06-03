@@ -1,0 +1,66 @@
+.thongtin-content {
+    width: 80%;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#thanhtoan-tieude {
+    text-align: center;
+    font-family: Fester_Bold;
+}
+
+.border-hanhkhach {
+    border: 1px solid black;
+    margin-top: -40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.hanhkhanh {
+    padding: 10px;
+    padding-left: 10%;
+}
+
+.tongcong {
+    margin-left: 10%;
+}
+
+.pttt {
+    margin-left: 10%;
+}
+
+.input-themma {
+    width: 100px;
+}
+
+.btn-apdung {
+    background-color: #5DA9DD;
+    color: white;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.chonphuongthuc {
+    background-color: #5DA9DD;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn-datngay {
+    background-color: #D74848;
+    color: white;
+    font-family: Fester_Bold;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin: 20px auto;
+}

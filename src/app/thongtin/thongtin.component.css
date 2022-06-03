@@ -1,0 +1,228 @@
+    .container {
+        position: relative;
+    }
+    
+    .thongtin-content {
+        width: 80%;
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
+    .form-group {
+        margin-left: 70px;
+        margin-top: 20px;
+        width: 83%;
+    }
+    
+    .form-group2 {
+        margin-left: -2px;
+        margin-top: 20px;
+        width: 83%;
+    }
+    
+    .buttons_added {
+        opacity: 1;
+        display: inline-block;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        white-space: nowrap;
+        vertical-align: top;
+        position: absolute;
+        right: 0px;
+    }
+    
+    .is-form {
+        overflow: hidden;
+        position: relative;
+        background-color: #FFCC66;
+        height: 2.2rem;
+        width: 2.0rem;
+        padding: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        text-shadow: 1px 1px 1px #fff;
+        border: none;
+    }
+    
+    .is-form:focus,
+    .input-text:focus {
+        outline: none;
+    }
+    
+    .is-form.minus {
+        border-radius: 50%;
+        right: 10px;
+    }
+    
+    .is-form.plus {
+        border-radius: 50%;
+        right: 10px;
+    }
+    
+    .input-qty {
+        background-color: #fff;
+        height: 2.2rem;
+        width: 35px;
+        text-align: center;
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    .input-qty::-webkit-outer-spin-button,
+    .input-qty::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .input-qty {
+        margin: 0 10px 0 -8px;
+    }
+    
+    .hanhkhach {
+        width: 39.5%;
+        margin-left: 22px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        margin: 20px 10px;
+    }
+    
+    .sl {
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .thongtin-button {
+        font-family: Fester_Bold;
+        background-color: #5DA9DD;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 35px;
+        margin-left: 10px;
+    }
+    
+    .text-divider {
+        display: flex;
+        align-items: center;
+        width: 868px;
+        margin-top: 20px;
+        margin-left: 0px;
+        --text-divider-gap: 1rem;
+    }
+    
+    .text-divider::before,
+    .text-divider::after {
+        content: '';
+        height: 1px;
+        background-color: black;
+        flex-grow: 1;
+    }
+    
+    .text-divider::before {
+        margin-right: var(--text-divider-gap);
+    }
+    
+    .text-divider::after {
+        margin-left: var(--text-divider-gap);
+    }
+    
+    .thongtinlienlac {
+        width: 950px;
+        align-content: center;
+    }
+    
+    .border-ttll {
+        border: 1px solid black;
+        border-top: none;
+        margin-top: -38px;
+    }
+    
+    #thongtin-tieude__mobile {
+        display: none;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .text-divider {
+            width: 725px;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+    }
+    
+    @media only screen and (max-width:1000px) {
+        .text-divider {
+            width: 532px;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        .form-group {
+            margin-left: 45px;
+            align-items: center;
+        }
+        .form-group2 {
+            margin-left: 45px;
+            align-items: center;
+        }
+        .hanhkhach {
+            width: 80%;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .text-divider {
+            width: 388px;
+        }
+        .form-group {
+            margin-left: 35px;
+            align-items: center;
+        }
+        .form-group2 {
+            margin-left: 35px;
+            align-items: center;
+        }
+        .hanhkhach {
+            width: 78%;
+            margin-left: 15px;
+            margin-bottom: 2px;
+        }
+        .embe {
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 580px) {
+        .text-divider {
+            width: 343px;
+        }
+    }
+    
+    @media only screen and (max-width:480px) {
+        .text-divider {
+            width: 275px;
+        }
+        .form-group {
+            margin-left: 25px;
+        }
+        .form-group2 {
+            margin-left: 25px;
+        }
+        .hanhkhach {
+            margin-left: 10px;
+            margin-bottom: 2px;
+            padding: 0px;
+        }
+        .embe {
+            margin-bottom: 20px;
+        }
+        .sl {
+            margin-top: 30px;
+        }
+    }

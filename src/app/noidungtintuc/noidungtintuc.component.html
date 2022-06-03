@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="noidungtintuc-content">
+        <div class="row">
+            <span class="badge">TIN TỨC DU LỊCH</span>
+        </div>
+        <div class="noidungtintuc-container">
+            <div class="noidungtintuc-container-left">
+                <div style="margin: 30px">
+                    <div id="Load_Content" *ngFor="let t of tintuc" [class.d-none]="t.tintuc_id==selectedId?false:true">
+                        <div [innerHTML]="t.content"></div>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="noidungtintuc-container-right">
+                <div class="noidungtintuc-container-right-tintucmoi">
+                    <div style="margin:20px;text-align: center;">
+                        <h2>TIN TỨC MỚI</h2>
+                    </div>
+                    <div>
+                        <ul class="noidungtintuc-ul" id="tintucmoi" *ngFor="let t of tintuc;first as isFirst" [class.d-none]="t.tintuc_id>=4?true:false">
+                            <li>
+                                <a routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active">{{t.header}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="noidungtintuc-container-right-tintucphobien">
+                    <div style="margin:20px;text-align: center;">
+                        <h2>TIN TỨC PHỔ BIẾN</h2>
+                    </div>
+                    <div>
+                        <ul class="noidungtintuc-ul" id="tintucphobien" *ngFor="let t of tintuc;first as isFirst" [class.d-none]="t.tintuc_id>=4?false:true">
+                            <li><a routerLink="/noidungtintuc/{{t.tintuc_id}}" routerLinkActive="active">{{t.header}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
